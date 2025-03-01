@@ -85,7 +85,7 @@ fun ChangeInAltitude() {
 
 // formula to convert pressure readings into altitude
 fun calculateAltitude(pressure: Float): Float {
-    val P0 = 1013.25f // Sea level pressure
+    val P0 = 1013.25f
     return 44330 * (1 - (pressure / P0).pow(1 / 5.255f))
 }
 
